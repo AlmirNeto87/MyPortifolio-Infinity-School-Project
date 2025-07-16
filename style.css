@@ -112,10 +112,10 @@ nav ul li a {
 }
 
 @keyframes bg-slide {
-  0%   { background-image: url("img/foto1.jpg"); }
-  33%  { background-image: url("img/foto2.jpg"); }
-  66%  { background-image: url("img/foto3.jpg"); }
-  100% { background-image: url("img/foto4.jpg"); }
+  0%   { background-image: url("./img/foto1.jpg"); }
+  33%  { background-image: url("./img/foto2.jpg"); }
+  66%  { background-image: url("./img/foto3.jpg"); }
+  100% { background-image: url("./img/foto4.jpg"); }
 }
 
 #container-flex {
