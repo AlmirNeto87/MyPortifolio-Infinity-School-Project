@@ -1,0 +1,417 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.img-logo-nav{
+  width: 40px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  gap: 20px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+#menu-button {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+}
+
+nav {
+  display: none; /* começa escondido */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#menu-toggle:checked + #menu-button + nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  
+  font-size: 1.2rem;
+}
+
+
+#button-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0 10px;
+  background-color: #000000;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: auto;
+  transition: all 0.3s ease; /* Suaviza a transição */
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+
+#hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  animation: bg-slide 15s infinite;
+  opacity: 0.7; /* Deixa o fundo mais suave */
+}
+
+@keyframes bg-slide {
+  0%   { background-image: url("img/foto1.jpg"); }
+  33%  { background-image: url("img/foto2.jpg"); }
+  66%  { background-image: url("img/foto3.jpg"); }
+  100% { background-image: url("img/foto4.jpg"); }
+}
+
+#container-flex {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: rgb(0, 0, 0); /* Defina a cor do texto para contrastar com a imagem */
+
+}
+
+#button-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  width: 100px;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px; /* Espaçamento */
+}
+
+
+#hero1 {
+  position: relative;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw; /* Ajusta conforme o tamanho desejado */
+  padding: 20px ;
+  margin: 20px;
+}
+
+#container1-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  .container1-child-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .img-hero1{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
+#hero2 {
+  position: relative;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;; /* Ajusta conforme o tamanho desejado */
+  padding: 20px ;
+  margin: 20px;
+}
+
+.img-hero2{
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#container2-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+   
+  .container2-child-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    gap: 20px;
+    .container2-child1-flex{
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: center;
+      gap: 20px;
+      .container2-child2-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+        #button-hero2{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 10px 0 10px;
+         width: 100px;
+         border: 1px solid gray;
+         
+        }
+      }
+    }
+
+  }
+
+}
+
+#hero3 {
+  position: relative;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw; /* Ajusta conforme o tamanho desejado */
+  padding: 20px ;
+  margin: 20px;
+}
+
+
+
+.container3-child-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    gap: 20px;
+    border: 1px solid gray;
+    padding: 20px ;
+    margin: 20px;
+}
+
+.container3-child1-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container3-child2-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.img-coment{
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+}
+
+#hero4 {
+  position: relative;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw; /* Ajusta conforme o tamanho desejado */
+  padding: 0;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#container4-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+  width:100vw;
+  ;
+  
+  .container4-child-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    
+  }
+}
+
+.img-contatos{
+  width: 50px;
+  
+}
+
+footer{
+  text-align: center;
+  background-color: gray;
+  padding: 20px ;
+  gap: 10px;
+  .img-logo-footer{
+  width: 200px;
+  }
+
+  h4{
+    padding-top: 10px;
+  }
+}
+
+#whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+#whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Codigo Abaixo para responsividade de telas */
+
+/* === CELULARES (até 600px) === */
+@media (max-width: 600px) {
+  #container1-flex,
+  #container2-flex,
+  #container4-flex,
+  .container3-child1-flex,
+  .container2-child1-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  #button-header {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .img-logo-nav,
+  .img-coment,
+  .img-contatos {
+    width: 30px;
+  }
+
+  .img-hero1,
+  .img-hero2 {
+    width: 100%;
+    height: auto;
+  }
+
+  footer .img-logo-footer {
+    width: 100px;
+  }
+}
+
+
+/* === TABLETS (até 1024px) === */
+@media (max-width: 1024px) {
+  #container1-flex,
+  #container2-flex,
+  #container4-flex,
+  .container3-child1-flex,
+  .container2-child1-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #button-header {
+    margin-left: auto;
+  }
+
+  .img-hero1,
+  .img-hero2 {
+    width: 100%;
+    height: auto;
+  }
+}
