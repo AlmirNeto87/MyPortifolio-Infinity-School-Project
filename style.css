@@ -315,6 +315,7 @@ footer{
   background-color: gray;
   padding: 20px ;
   gap: 10px;
+  width: 100vw;
   .img-logo-footer{
   width: 200px;
   }
