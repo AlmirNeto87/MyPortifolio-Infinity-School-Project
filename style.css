@@ -15,7 +15,12 @@ a{
 }
 
 header {
+  position: fixed;
   display: flex;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   align-items: center;
   width: 100vw;
   gap: 20px;
