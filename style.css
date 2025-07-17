@@ -377,8 +377,12 @@ footer{
     gap: 10px;
     width: 100%;
     padding: 2px;
-    
+    nav ul{
+      justify-content: space-between;
+    }
   }
+    
+  
 
   #button-header {
     margin-left: 0;
