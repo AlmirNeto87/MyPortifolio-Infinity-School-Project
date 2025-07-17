@@ -299,8 +299,8 @@ nav ul li a {
   text-align: center;
   background-color: rgb(255, 255, 255);
   width: 100vw; /* Ajusta conforme o tamanho desejado */
-  padding: 0;
-  overflow: hidden;
+ 
+  /* overflow: hidden; */
   margin-top: 20px;
   margin-bottom: 20px;
 }
