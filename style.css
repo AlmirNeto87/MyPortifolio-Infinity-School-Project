@@ -140,6 +140,9 @@ nav{
   padding: 20px ;
   margin-top: 20px;
   margin-bottom: 20px;
+   h2{
+    margin-bottom: 20px;
+  }
 }
 
 #container1-flex{
@@ -248,7 +251,7 @@ nav{
     gap: 20px;
     border: 1px solid gray;
     padding: 20px ;
-    
+    margin-top: 20px;
 }
 
 .container3-child1-flex{
@@ -277,9 +280,7 @@ nav{
   position: relative;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  width: 100vw; /* Ajusta conforme o tamanho desejado */
- 
-  /* overflow: hidden; */
+  width: 100vw;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -340,11 +341,12 @@ footer{
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-#whatsapp-btn:hover {
-  transform: scale(1.1);
-}
+
 
 /* Codigo Abaixo para responsividade de telas */
 
