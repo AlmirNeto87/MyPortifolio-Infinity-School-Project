@@ -369,19 +369,22 @@ footer{
     }
   }
   
-  header {
+ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    width: auto;
+    width: 100%;
+    padding: 2px;
     
   }
 
   #button-header {
     margin-left: 0;
     width: auto;
+    border-radius: 0;
+    padding: 3px;
   }
 
   .img-logo-nav,
